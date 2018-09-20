@@ -1,0 +1,34 @@
+import pepita.*
+import comidas.*
+import masAves.*
+import roque.*
+
+test "segunda parte" {
+	var juliana = new Golondrina()
+	var melina = new Golondrina()
+	var tatiana = new Golondrina()
+	var pirula = new Paloma()
+	var pirincha = new Paloma()
+	
+	juliana.comer(alpiste, 50)
+	melina.comer(mondongo, 9)
+	tatiana.comer(sorgo, 8)
+	pepon.comer(alpiste,100)
+	pirula.comer(alpiste, 100)
+	pirincha.volar(20)
+	roque.agregarPupilo(juliana)
+	roque.agregarPupilo(melina)
+	roque.agregarPupilo(pepon)
+	roque.agregarPupilo(pirincha)
+	roque.entrenar()
+	
+	assert.equals(285, juliana.energia())
+	assert.equals(967, melina.energia())
+	assert.equals(72, tatiana.energia())
+	assert.equals(249, pepon.energia())
+	assert.equals(100, pirula.gramosIngeridos())
+	assert.equals(0, pirula.kmsRecorridos())
+	assert.equals(30, pirincha.gramosIngeridos())
+	assert.equals(35, pirincha.kmsRecorridos())
+	
+}

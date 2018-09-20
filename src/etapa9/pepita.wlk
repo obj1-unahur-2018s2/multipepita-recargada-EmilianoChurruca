@@ -25,21 +25,17 @@ class Golondrina {
 	}
 }
 
-object prueba {
-	var juliana = new Golondrina()
-	var enriqueta = new Golondrina()
-	var melina = new Golondrina()
-	var tatiana = new Golondrina()
+class Paloma {
+	var gramosConsumidos = 0
+	var kmsRecorridos = 0
 	
-	method comeJuliana(cosa, gramos) {
-		return juliana.comer(cosa, gramos)
-	}
+	method comer(cosa, gramos) { gramosConsumidos += gramos}
+	method volar(kms) { kmsRecorridos += kms }
+	method kmsRecorridos() { return kmsRecorridos }
+	method gramosIngeridos() { return gramosConsumidos }
+	method estaDebil() { }  
+	method estaFeliz() { }
+	method cuantoQuiereVolar() { }
+	method haceLoQueQuieras() { } 
 	
-	method comeMelina(cosa, gramos) {
-		return melina.comer(cosa, gramos)
-	}
-	
-	method comeTatiana(cosa, gramos) {
-		return tatiana.comer(cosa, gramos)
-	}
 }
